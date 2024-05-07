@@ -1,0 +1,46 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    // Установка зависимостей из файла requirements.txt
+                    sh 'pip install -r requirements.txt'
+                }
+            }
+        }
+
+        stage('Run Python Scripts') {
+            steps {
+                script {
+                    echo 'Running Python scripts...'
+
+                    sh 'python scripts/script1.py'
+                    echo 'Finished running script 1'
+
+                    echo 'Some information between scripts...'
+
+                    sh 'python scripts/script2.py'
+                    echo 'Finished running script 2'
+
+                    echo 'Some more information...'
+
+                    sh 'python scripts/script3.py'
+                    echo 'Finished running script 3'
+
+                    echo 'Additional information...'
+
+                    sh 'python scripts/script4.py'
+                    echo 'Finished running script 4'
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline completed.'
+        }
+    }
+}
