@@ -17,7 +17,16 @@ pipeline {
                     echo 'Running Python scripts...'
 
                     sh 'python3 scripts/data_creation.py'
-                    echo 'Finished running script 1'
+                    echo 'Finished running data creation'
+
+                    sh 'python3 scripts/model_preprocessing.py'
+                    echo 'Finished running model preprocessing'
+
+                    sh 'python3 scripts/model_preparation.py'
+                    echo 'Finished running model preparation'
+
+                    sh 'python3 scripts/model_testing.py'
+                    echo 'Finished running model testing'
 
                 }
             }
