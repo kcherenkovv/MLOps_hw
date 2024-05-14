@@ -11,4 +11,4 @@
 
 Пример фотографий автомобилей можно взять в папке `templates`
 ### Как это выглядит
-![screen1](https://github.com/Alex-mur/urfu-program-engineering-1/blob/main/screens/scr1.JPG)
+![screen1](https://github.com/kcherenkovv/MLOps_hw/blob/main/lib3_1/example/scr1.jpg)
