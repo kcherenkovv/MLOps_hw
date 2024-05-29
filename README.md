@@ -42,3 +42,8 @@
 - dvc push -r your_text - после каждой модификации данных - отправка на google drive через dvc
 # Пример файлов в Google drive в папке titanic:
 ![screen1](https://github.com/kcherenkovv/MLOps_hw/blob/main/lib4/screen/screendrive.png)
+
+# **Практика 5**
+Применяем средства автоматизации тестирования python для автоматического тестирования качества работы модели машинного обучения на различных датасетах.
+Для применения средств автоматизации необходимо запустить все ячейки ноутбука `script.ipynb`
+![screen1](https://github.com/kcherenkovv/MLOps_hw/blob/main/lib5/image/Снимок%20экрана%202024-05-29%20152836.png)
